@@ -36,6 +36,6 @@ ao.send({ Target = "xnkv_QpWqICyt8NpVMbfsUQciZ4wlm5DigLrfXRm8fY", Action = "Regi
 
 If you would like to tokenize your chatroom, please load the token blueprint with `.load-blueprint token`. You can then manipulate the `Balances` variable as necessary in order to establish the appropriate starting conditions. If a chatroom has a token, users can use the `Tip()` function in the client to send small gifts to one another. You can also enforce that only users with the token can send messages by running `RequireTokens = true`.
 
-### Making your chatroom immutable
+### Making your chatroom immutable:
 
 By default, all aos processes have the ability for their `Owner` execute code in their shell. Like all aos processes, however, the user can easily make their program immutable and trustless by setting its owner value to `nil`. To do so, simply execute `Owner = nil`. After executing this command the process will be unresponsive to any future directives by you or others.
